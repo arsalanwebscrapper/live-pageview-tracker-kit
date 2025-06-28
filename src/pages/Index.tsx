@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp, Eye, BarChart3, Zap, Globe, Shield, Rocket, Github, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -59,12 +60,12 @@ const Index = () => {
             >
               Get Started Now
             </a>
-            <a 
-              href="#demo" 
+            <Link 
+              to="/demo" 
               className="border border-slate-600 hover:border-purple-500 text-slate-300 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
             >
-              View Demo
-            </a>
+              View Live Demo
+            </Link>
           </div>
 
           {/* Feature Pills */}
