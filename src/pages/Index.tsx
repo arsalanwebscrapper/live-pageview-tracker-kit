@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, Eye, BarChart3, Zap, Globe, Shield, Rocket } from 'lucide-react';
+import { ChevronDown, ChevronUp, Eye, BarChart3, Zap, Globe, Shield, Rocket, Github, Linkedin } from 'lucide-react';
 
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -367,6 +366,58 @@ window.pageCounterConfig = {
         </div>
       </section>
 
+      {/* Author Credit Section */}
+      <section className="py-16 bg-gradient-to-r from-slate-900/50 to-purple-900/30 border-t border-slate-800">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          {/* Animated Typing SVG */}
+          <div className="mb-12">
+            <img 
+              src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&size=26&duration=4000&pause=800&color=00FF9F&background=111111&vCenter=true&width=600&height=60&lines=🔥+Live+Page+View+Tracker+by+Arsalan;📊+Built+with+Firebase+%26+Netlify+❤️" 
+              alt="Live Page View Tracker by Arsalan"
+              className="mx-auto rounded-lg"
+            />
+          </div>
+
+          {/* Author Info */}
+          <div className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 p-8 rounded-2xl border border-slate-700 max-w-md mx-auto">
+            <div className="mb-6">
+              <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-white">MA</span>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">Md Arsalan</h3>
+              <p className="text-purple-300 font-medium">Full Stack Developer</p>
+            </div>
+            
+            <div className="flex justify-center gap-4">
+              <a 
+                href="https://github.com/mdarsalan-c30" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors"
+              >
+                <Github className="w-4 h-4" />
+                <span className="text-sm font-medium">GitHub</span>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/md-arsalan-web/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+                <span className="text-sm font-medium">LinkedIn</span>
+              </a>
+            </div>
+            
+            <div className="mt-6 pt-6 border-t border-slate-700">
+              <p className="text-slate-400 text-sm">
+                "Building tools that make developers' lives easier, one line of code at a time."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 border-t border-slate-800">
         <div className="max-w-4xl mx-auto px-4 text-center">
@@ -384,7 +435,7 @@ window.pageCounterConfig = {
           
           <div className="border-t border-slate-800 pt-8">
             <p className="text-slate-400">
-              Made with ❤️ for developers who want simple, effective page tracking
+              Made with ❤️ by Arsalan for developers who want simple, effective page tracking
             </p>
             <p className="text-slate-500 text-sm mt-2">
               © 2025 Live PageView Counter Library • Open Source & Free Forever
