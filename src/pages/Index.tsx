@@ -385,7 +385,7 @@ window.pageCounterConfig = {
                 <span className="text-2xl font-bold text-white">MA</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Md Arsalan</h3>
-              <p className="text-purple-300 font-medium">Full Stack Developer</p>
+              <p className="text-purple-300 font-medium">Confused Developer</p>
             </div>
             
             <div className="flex justify-center gap-4">
